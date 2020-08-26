@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Nooran osaaminen </title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+             <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="home.html">Home</a>
+                 </div>
+            
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div> 
+
+            <div class="right-side">
+                    <div class="brand">
+                        <div>NOORA KAUHANEN </div>
+                    </div>
+             </div>
+         </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/makingfood.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                       <!-- <div class="logo-wrapper">
+                            <img src="images/P8210237.JPG"  alt="">
+                        </div> -->
+
+                        <div class="subtitle">
+                          1. Tykkään tehdä ruokaa ja mielestäni vielä aika hyvin
+                        </div>
+                        
+                    </div> 
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/singwoman.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <!-- <div class="logo-wrapper">
+                            <img src="images/P8210237.JPG"  alt="">
+                        </div> -->
+
+                        <div class="subtitle">
+                            2. Osaan mielestäni myös laulaa, mutta yleisö voi olla toista mieltä
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/service.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <!-- <div class="logo-wrapper">
+                            <img src="images/P8210237.JPG"  alt="">
+                        </div> -->
+
+                        <div class="subtitle">
+                            3. Olen tehnyt asiakaspalvelua monta vuotta ja on siinä mielestäni hyvä
+                        </div>
+                    </div>
+                </div>
+
+
+               <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/laugh.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <!-- <div class="logo-wrapper">
+                            <img src="images/P8210237.JPG"  alt="">
+                        </div> -->
+
+                        <div class="subtitle">
+                            4. Olen hauska
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/coding.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                         <!-- <div class="logo-wrapper">
+                            <img src="images/P8210237.JPG"  alt="">
+                        </div> -->
+
+                        <div class="subtitle">
+                            5. Osaan myös vähän koodata, kerron ABOUT välilehdellä tarkemmin
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/cat.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                       <!-- <div class="logo-wrapper">
+                            <img src="images/P8210237.JPG"  alt="">
+                        </div> -->
+
+                        <div class="subtitle">
+                            6. Kissat on myös aika kivoja <3
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+    
+
+</script>
+
+</html>
